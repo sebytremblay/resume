@@ -1,0 +1,345 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-9pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.00\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small{#2} \\
+      \textit{\small#3} & \small{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\experienceHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.00\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} | \small{#3}, \textit{\small #4} & \small{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.00\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\usepackage{calc} % added
+\newcommand{\resumeSubSubheadingLeft}[2]{% % added
+    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+        \item[\small #1]{\textit{\small  #2}}
+    \end{description}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.00\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]\vspace{-3pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}
+[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Sebastian Tremblay} 
+    \\ \vspace{1pt}
+    \small
+    \href{mailto:tremblay.se@northeastern.edu}{\underline{tremblay.se@northeastern.edu}} $|$
+    % \href{https://github.com/sebytremblay}{\underline{github.com/sebytremblay}} $|$
+    \href{https://www.linkedin.com/in/sebastiantremblay/}{\underline{linkedin.com/in/sebastiantremblay}} $|$
+    \href{https://www.sebytremblay.com}{\underline{sebytremblay.com}} 
+    \\ \vspace{3pt}
+    % \small 571-999-2625 $|$ 
+    % \\ \vspace{3pt}
+    % Boston, MA $|$
+    % \href{mailto:tremblay.se@northeastern.edu}{\underline{tremblay.se@northeastern.edu}} $|$
+    % (571) 999-2625
+\end{center}
+
+%-----------EDUCATION-----------
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Candidate for B.S. in Computer Science, Minor in Mathematics}{September 2021 -- May 2025}
+    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Achievements:XX}}, itemsep=0.5pt, parsep=0.5pt]
+      \item[\small{Achievements:}] \small 3.99/4.00 GPA, Dean’s List Award ($\times 6$), Dean’s Scholarship
+      \item[\small{Coursework:}] \small Algorithms and Data Structures, Object Oriented Design, Fundamentals of Software Engineering, Database Design, Distributed Systems, Natural Language Processing, Intro to Machine Learning, Multivariable Calculus, Mathematics of Data Models, Probability and Statistics, Linear Algebra
+    \end{description}
+    \vspace{-8pt}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Programming Languages:XX}}, itemsep=0.5pt, parsep=0.5pt]
+  \item[\small{Programming Languages:}] \small C\#, Java, Python, SQL, TypeScript, JavaScript, C, HTML, CSS
+  \item[\small{Frameworks \& Libraries:}] \small Spring, AngularJS, Pandas, NumPy, React, Redis, PostgreSQL, MySQL, MongoDB, PyTorch, Flask, Kafka, PySpark
+  \item[\small{Developer Tools:}] \small Git, Docker, Kubernetes, Unix, Linux, Jira, Jenkins
+\end{description}
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \experienceHeading
+      {Software Engineer Intern}{May 2024 -- Present}
+      {Salesforce}{San Francisco, CA}
+      \resumeItemListStart
+        %\resumeItem{Enhanced operational efficiency for 5,000 customers by designing and integrating management tools for Intelligent Document Processing (IDP) service into Anypoint Admin Console using AngularJS, HTML, and CSS}
+        %\resumeItem{Implemented 2 Spring Boot REST APIs to interface with IDP services, supporting development by authoring ADR's}
+        %\resumeItem{Spearheaded admin console enhancements for MuleSoft's Intelligent Document Processing (IDP) feature, empowering hundreds of daily users to query, re-configure, and troubleshoot failed executions using AngularJS and Bootstrap}
+        %\resumeItem{Spearheaded launch of admin console for Intelligent Document Processing (IDP) product with Angular and Bootstrap, empowering hundreds of daily users to manage ongoing and failed IDP executions in centralized application}
+        \resumeItem{Extended 2 Spring Boot/WebFlux APIs with 8 new routes to introduce admin functionality in Intelligent Document Processing tool, enhancing data management (Postgres, Redis) and runtime microservices (AWS Textract)}
+        % \resumeItem{Propelled Salesforce Einstein LLM integration, minimizing AWS dependencies and introducing tailored IDP features}
+        %\resumeItem{Propelled Salesforce LLM Gateway integration for IDP, broadening supported models to expand user base 20\%. Improved average result's confidence scores 8\% and reduced operational costs through leveraging in-house solution}
+        \resumeItem{Spearheaded launch of IDP Admin Console UI, delivering 12 monitoring features with AngularJS and Bootstrap. Reduced average troubleshooting time 30\% by shifting solution engineers from terminal to centralized application}
+        %\resumeItem{Propelled Salesforce LLM Gateway integration by researching performance and functional impacts of PII masking. Enabled expansion of supported models, broadening user base and improving average result confidence scores 8\%}
+        \resumeItem{Researched PII Masking performance/functional impacts, helping expand offered LLMs to bump confidence scores 8\%}
+        \resumeItem{Eliminated 80\% of manual validation in human review tasks by refactoring scope of extraction criteria enforcement}
+        %\resumeItem{Implemented per-org rate limiting and length restrictions, reducing system crashes 10\% by mitigating noisy neighbors}
+        %\resumeItem{Built dynamic data redaction service, removing sensitive information based on user's authorization level}
+        \resumeItem{Orchestrated VTO event with 30+ employees, recruiting external charity speaker and leading hands-on team activity}
+      \resumeItemListEnd
+  
+    \experienceHeading
+      {Software Tools Co-Op}{July 2023 -- December 2023}
+      {Insulet Corporation}{Acton, MA}
+      \resumeItemListStart
+        %\resumeItem{Developed C\# solution for insulin pump quality assurance, introducing asynchronous validation of up to 200 units. Reduced batch processing time by 2 hours and slashed manual labor by 80\%, enhancing manufacturing throughput}
+        %\resumeItem{Developed C\# solution for insulin pump quality testing, introducing asynchronous validation up to 200 units. Designed .NET API and integrated MySQL database, cutting batch processing time 2 hours and slashing manual labor 60\%}
+        %\resumeItem{Developed application for asynchronous insulin pump testing with C\# and .NET API, cutting batch processing by time 2 hours. Integrated MySQL to scale concurrent product validation 20$\times$ up to 200 units per machine}
+        %\resumeItem{Expanded C\# solution for insulin pump quality assurance, introducing asynchronous validation of up to 200 units with .NET API and MySQL. Reduced batch processing time by 2 hours and slashed related manual labor 60\%}
+        \resumeItem{Automated insulin pump connectivity testing within C\# quality assurance tool, minimizing manual interaction to slash batch processing time by 2 hours. Leveraged MySQL stored procedures to handle real-time status updates and alarms}
+        %\resumeItem{Developer C\# application for asynchronous insulin pump quality testing with .NET API and MySQL, cutting batch processing time 2 hours, scaling concurrent product validation 20$\times$, and slashing related manual labor 60\%}
+        %\resumeItem{Pioneered team's transition to automated API testing by automating execution of 42 manual product tests with Python. Consequently spearheaded integration of ReadyAPI, eliminating human interaction to reduce test suite run time 80\%}
+        %\resumeItem{Pioneered team's transition to automated API testing, eliminating human interaction to reduce test suite run time 80\%}
+        \resumeItem{Pioneered team's transition to automated API testing, mitigating human interaction to reduce test suite run time 80\%}
+        % \resumeItem{Automated execution and documentation of 42 manual tests with Python, resulting in team's transition to automated API testing. Spearheaded integration of ReadyAPI, reducing manual test run time 90\% and minimizing human error}
+        % \resumeItem{Developed and maintained 3 .NET applications, helping scale concurrent quality testing for manufacturing team}
+        %\resumeItem{Pioneered transition to automated API testing, reducing test run time 90\% and transforming new product's test design}
+        %\resumeItem{Automated execution and documentation of 42 manual tests with Python, Python requests library, and HelixALM API}
+        %\resumeItem{Collaborated biweekly with 3 engineers to plan future product architecture, drafting component design and interaction}
+        \resumeItem{Implemented workflow encapsulation using publisher-subscriber design, enhancing GUI with 3 live status indicators}
+        \resumeItem{Refactored hardware interaction layer with template method pattern, maximizing modularity across 14 response classes}
+        % \resumeItem{Enhanced code maintainability by refactoring entire hardware interaction infrastructure to adhere to SOLID principle}
+      \resumeItemListEnd
+
+    \experienceHeading
+      {Software Engineer Intern}{May 2022 -- December 2022}
+      {Ultimate Kronos Group (UKG)}{Virtual}
+      \resumeItemListStart
+        \resumeItem{Earned Employee of Month and job extension offer after solving critical system failure impacting 4 high-value clients}
+        \resumeItem{Diagnosed and resolved 31 software bugs by interfacing with customers, implementing fixes using C\# and Angular}
+        % \resumeItem{Interacted with clients to debug environment issues using C\#, HTML, and SQL, improving user experience. Earned Employee of Month award and internship extension offer after resolving critical defect for high-value clients}
+        \resumeItem{Built app in internal Hackathon to automate local environment setup, reducing average onboarding time by 2 days}
+        \resumeItem{Directed one Agile stand-up meeting per week for 10-member team, demonstrating leadership and initiative}
+        \resumeItem{Debugged 70+ failing end-to-end tests using Selenium and NUnit, contributing to 8\% improvement in test coverage}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        % \resumeProjectHeading 
+        %     {\textbf{Twitter Stock Predictor} $|$ \emph{Python, Pytorch, Sklearn, Pandas, Twscrape, YFinance}}{May 2024}
+        %     \resumeItemListStart
+        %         \resumeItem{Engineered data pipeline to scrape and pre-process Twitter data, increasing dataset by $\sim$150,000 entries per day. Fine-tuned RoBERTA model to classify Tweets related to stock tickers, surpassing Regex model by 20\% accuracy}
+        %         \resumeItem{Trained 4 regression models to predict short-term price movement using sentiment analysis and injected YFinance data}
+        %     \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{High-Performance Data Pipeline} $|$ \emph{Python, PyTorch, Kafka, PySpark, MariaDB}}{June 2024}
+        \resumeItemListStart
+            %\resumeItem{Engineered high-performance data pipeline using Apache Kafka and PySpark, optimizing processing latency in distributed data streams. Integrated MariaDB for scalable and reliable data warehousing of 20+ financial metrics}
+            %\resumeItem{Trained BiGRU neural network with PyTorch for financial market predictions and real-time forecasting}
+            \resumeItem{Engineered data pipeline with 3 web scrapers and 2 Finance APIs, extracting and calculating 20+ financial metrics (e.g., order volume imbalance, micro-price, Bollinger Bands) and warehousing data in MariaDB}
+            \resumeItem{Optimized processing latency and scalability in distributed data streams by integrating Kafka and PySpark}
+            \resumeItem{Trained BiGRU neural network with PyTorch, predicting direction and degree of stock movement in real-time}
+        \resumeItemListEnd
+        \resumeProjectHeading 
+            {\textbf{Facial Detection Attendance Tracker} $|$ \emph{Python, Google Cloud Platform, Azure, OpenCV}}{January 2024}
+            \resumeItemListStart
+                \resumeItem{Designed facial recognition system to automate roll call at club meetings of 100+ members}
+                \resumeItem{Slashed API calls 80\% by integrating GCP's Video Intelligence to identify and skip all video segments without faces}
+                \resumeItem{Leveraged Azure's Face API and OpenCV to annotate detected faces with bounding boxes and predicted labels}
+                %\resumeItem{Enhanced manual analytics by annotating detected faces in input video using Google's Video Intelligence and OpenCV}
+                % \resumeItem{Leveraged Azure Face API to train facial recognition model, achieving 96.2\% accuracy in identifying attendees}
+            \resumeItemListEnd
+        % \resumeProjectHeading
+        %       {\textbf{Full-Stack 2048 Game} $|$ \emph{Typescript, React, Express.js, MongoDB, REST API}}{August 2023}
+        %       \resumeItemListStart
+        %         \resumeItem{Implemented full-stack 2048 Game with ExpressJS API, introducing "game replay" and "undo move" for enhanced UX}
+        %         \resumeItem{Integrated MongoDB for scalable game state storage, ensuring data integrity and supporting 100+ concurrent sessions}
+        %       \resumeItemListEnd
+        % \resumeProjectHeading
+        %       {\textbf{Open-Source Game Platform} $|$ \emph{TypeScript, React, Node, Jest, Git}}{April 2023}
+        %       \resumeItemListStart
+        %         \resumeItem{Developed Battleship for open-source platform, implementing custom UI, leaderboard, sound effects, and AI opponents}
+        %         \resumeItem{Led sprint planning, biweekly stand-ups, and retrospective meetings for 4-person team to address development hurdles}
+        %         %\resumeItem{Led sprint planning, biweekly stand-ups, and retrospective meetings for 4-person team to introduce custom Battleship mini-game to open-source online game platform, address development hurdles, and foster collaborative environment}
+        %         % \resumeItem{Optimized CI/CD using GitHub Pages, Heroku, and Netlify, cutting deploy times by 35\% and ensuring 99.9\% uptime}
+        %       \resumeItemListEnd
+        %\resumeProjectHeading
+              %{\textbf{FUSE File System} $|$ \emph{C, FUSE, Git}}{March 2023}
+              %\resumeItemListStart
+                %\resumeItem{Designed FUSE file system to efficiently manage 1MB disk image and support basic file operations}
+                %\resumeItem{Implemented scalable block allocation/de-allocation, improving file size adjustments for optimal memory usage}
+              %\resumeItemListEnd
+        %\resumeProjectHeading
+              %{\href{https://github.com/sebytremblay/Photo-Processor}{\underline{\textbf{Image Processor}}} $|$ \emph{Java, JUnit, Git}}{November 2022 -- December 2022}
+              %{\textbf{Image Processor} $|$ \emph{Java, JUnit, Git, MVC}}{November 2022 -- December 2022}
+              %\resumeItemListStart
+                %\resumeItem{Partnered with peer to implement 13 image transformations, using command design pattern to enhance scalability}
+                %\resumeItem{Applied Command design pattern to improve scalability and eliminate refactoring needs for new feature integration}
+                %\resumeItem{Employed MVC architecture for component segregation, permitting seamless UI swaps and 63 unit tests using mocks}
+              %\resumeItemListEnd
+        %\resumeProjectHeading
+        %      {\textbf{Deployment Assistant} $|$ \emph{Hackathon, Python, Batch}}{June 2022}
+        %      \resumeItemListStart
+        %        \resumeItem{Spearheaded initiative to streamline UKG on-boarding process, reducing environment setup time by 70\%}
+        %        \resumeItem{Collaborated with 5-person team to centralize deployment process, addressing and resolving 4 existing build challenges}
+        %      \resumeItemListEnd
+        %\resumeProjectHeading
+             % {\href{https://github.com/sebytremblay/Neural-Network}{\underline{\textbf{OCR Neural Network}}} $|$ \emph{Java, Swing}}{March 2021 -- April 2021}
+             %{\textbf{OCR Neural Network} $|$ \emph{Java, Git}}{March 2021 -- April 2021}
+            %\resumeItemListStart
+                %\resumeItem{Engineered feed-forward neural network using Sigmoid activation function, classifying hand-drawn digits via GUI}
+                %\resumeItem{Leveraged backwards error propagation to optimize network, achieving 93\% classification accuracy rate in production}
+            %\resumeItemListEnd
+        %\resumeProjectHeading
+        %      {\href{https://github.com/sebytremblay/Wireless-Chatroom}{\underline{\textbf{Online Chatroom}}} $|$ \emph{Java}}{December 2020 -- January 2021}
+        %    {\textbf{Online Chatroom} $|$ \emph{Java}}{December 2020 -- January 2021}
+        %    \resumeItemListStart
+        %        \resumeItem{Designed and developed online chatroom, employing hub-and-spoke architecture for efficient server communication}
+        %        \resumeItem{Incorporated multi-threading to manage user registration and message transmission, supporting 50+ concurrent users}
+        %  \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXTRACURRICULARS-----------
+% \section{Leadership and Activities}
+%     \resumeSubHeadingListStart
+    %     \resumeProjectHeading
+    %           {\textbf{Career Mentor} $|$ \emph{Computer Science Mentoring Organization}}{January 2023 -- Present}
+    %           \resumeItemListStart
+    %             %\resumeItem{Achieved 100\% job placement for underclassmen mentees through advising on resumes, interviews, and job applications}
+    %             \resumeItem{Advised students on personal projects, hosting weekly meetings for project planning, debugging, and learning resources}
+    %             \resumeItem{Hosted resume and application workshops for 50+ students, sharing strategies from personal research and experience}
+    %             %\resumeItem{Led a semester-long mentorship program in a student mentoring club, guiding one mentee per semester through the completion of personal projects with bi-weekly strategy sessions; provided tailored resource lists, fostering skill development in relevant technologies and methodologies. Enhanced mentees' project success rate by offering consistent, personalized support and problem-solving strategies.}
+    %           \resumeItemListEnd
+        % \resumeProjectHeading
+        %       {\textbf{Event Coordinator} $|$ \emph{Juvenile Diabetes Research Foundation (JDRF)}}{September 2022 -- Present}
+        %       \resumeItemListStart
+        %         \resumeItem{Conceptualized and led fundraisers, devising marketing strategy to attract hundreds of attendees and raise over \$40,000}
+        %         \resumeItem{Recruited external student groups and volunteer teams to maximize engagement, boosting annual revenue by 20\%}
+        %         % \resumeItem{Managed volunteer teams and paired with student groups to maximize engagement and boost annual revenue by 20\%}
+        %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
+\section{Ask Me About}
+ \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Activities:XXX}}, itemsep=0.5pt, parsep=0.5pt]
+  \small
+  \item[Activities:] Fundraiser Coordinator (\textit{Breakthrough T1D}), Undergraduate Career Mentor
+  \item[Interests:] Downhill Longboarding, Coffee, Mechanical Keyboards, Traveling, Restaurants, Bodybuilding
+\end{description}
+\vspace{-10pt}
+
+%-------------------------------------------
+\end{document}
