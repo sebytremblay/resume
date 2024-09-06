@@ -1,4 +1,4 @@
-name: Build LaTeX Resume
+name: Build LaTeX Resume and Convert to Image
 
 on:
   push:
@@ -32,11 +32,23 @@ jobs:
         with:
           root_file: main.tex
 
-      - name: Rename PDF output
-        run: mv main.pdf Sebastian_Tremblay_Resume.pdf
+      - name: Rename PDF output and move to output folder
+        run: mv main.pdf output/Sebastian_Tremblay_Resume.pdf
 
-      - name: Commit PDF to repository
+      - name: Convert PDF to PNG and move to output folder
         run: |
-          git add Sebastian_Tremblay_Resume.pdf
-          git commit -m "Generating Resume PDF"
+          sudo apt-get install -y poppler-utils
+          pdftoppm -png output/Sebastian_Tremblay_Resume.pdf output/resume_image
+
+      - name: Commit PDF and PNG to repository
+        run: |
+          git add output/Sebastian_Tremblay_Resume.pdf output/resume_image-1.png
+          git commit -m "Generating Resume PDF and PNG"
+          git push
+
+      - name: Update README with PNG
+        run: |
+          echo '![Resume](./output/resume_image-1.png)' > README.md
+          git add README.md
+          git commit -m "Update README with Resume Image"
           git push
