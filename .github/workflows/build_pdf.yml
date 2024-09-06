@@ -45,10 +45,3 @@ jobs:
           git add output/Sebastian_Tremblay_Resume.pdf output/resume_image-1.png
           git commit -m "Generating Resume PDF and PNG"
           git push
-
-      - name: Update README with PNG
-        run: |
-          echo '![Resume](./output/resume_image-1.png)' > README.md
-          git add README.md
-          git commit -m "Update README with Resume Image"
-          git push
