@@ -46,15 +46,12 @@ jobs:
           git commit -m "Generating Resume PDF and PNG"
           git push
 
-      - name: Push PDF and PNG to another repository
-        run: |
-          git init
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sebytremblay/portfolio.git
-          git fetch origin main
-          git checkout -b main origin/main
-          cp output/Sebastian_Tremblay_Resume.pdf public/static/misc/
-          git add Sebastian_Tremblay_Resume.pdf
-          git commit -m "Resume Update"
-          git push origin main
+      - name: Push PDF to portfolio repository
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        with:
+          source_file: 'output/Sebastian_Tremblay_Resume.pdf'
+          destination_repo: 'sebytremblay/portfolio'
+          destination_folder: 'public/static/misc/'
+          user_email: 'tremblay.se@northeastern.edu'
+          user_name: 'sebytremblay'
+          commit_message: 'Resume Update'
