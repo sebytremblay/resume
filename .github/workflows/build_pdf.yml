@@ -48,6 +48,8 @@ jobs:
 
       - name: Push PDF to portfolio repository
         uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_file: 'output/Sebastian_Tremblay_Resume.pdf'
           destination_repo: 'sebytremblay/portfolio'
