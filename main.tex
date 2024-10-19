@@ -149,9 +149,9 @@
     \resumeSubheading
       {Northeastern University}{Boston, MA}
       {Candidate for B.S. in Computer Science, Minor in Mathematics}{September 2021 -- May 2025}
-    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Achievements:XX}}, itemsep=0.5pt, parsep=0.5pt]
+    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Achievements:X}}, itemsep=0.5pt, parsep=0.5pt]
       \item[\small{Achievements:}] \small 3.99/4.00 GPA, Dean’s List Award ($\times 6$), Dean’s Scholarship
-      \item[\small{Coursework:}] \small Algorithms and Data Structures, Object Oriented Design, Fundamentals of Software Engineering, Database Design, Distributed Systems, Natural Language Processing, Intro to Machine Learning, Multivariable Calculus, Mathematics of Data Models, Probability and Statistics, Linear Algebra
+      \item[\small{Coursework:}] \small Algorithms \& Data Structures, Object Oriented Design, Database Design, Networking \& Distributed Systems, NLP, Machine Learning I/II, Multivariable Calculus, Probability \& Statistics, Linear Algebra
     \end{description}
     \vspace{-8pt}
   \resumeSubHeadingListEnd
@@ -160,13 +160,14 @@
 \section{Technical Skills}
  \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Programming Languages:XX}}, itemsep=0.5pt, parsep=0.5pt]
   \item[\small{Languages:}] \small Java, Python,  C\#, SQL, TypeScript, JavaScript, C, HTML, CSS
-  \item[\small{Frameworks \& Libraries:}] \small Spring, MySQL, PostgreSQL, Redis, Angular, React, Pandas, NumPy, PyTorch, Kafka
-  \item[\small{Developer Tools:}] \small Git, Docker, Kubernetes, Unix, Linux, Jira
+  \item[\small{Technologies \& Tools:}] \small Spring Boot, MySQL, PostgreSQL, Angular, React, Pandas, NumPy, PyTorch, Kafka, AWS, Terraform, Git, Docker, Kubernetes, Unix, Linux, Jira
+  % \item[\small{Developer Tools:}] \small Git, Docker, Kubernetes, Unix, Linux, Jira
+  \item[\small{Certifications:}] \small AWS Cloud Practitioner, Scrum Master
 \end{description}
 \vspace{-10pt}
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Work Experience}
   \resumeSubHeadingListStart
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
@@ -178,6 +179,17 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
     \experienceHeading
+      {Software Engineer Co-Op}{September 2024 -- Present}
+      {Northeastern University}{Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Managed team of five co-op developers, serving as primary liaison between industry stakeholders, university faculty, and development team. Oversaw all project planning and development efforts, instituting Agile environment as Scrum Lead}
+        % \resumeItem{Managed team of five co-op developers, overseeing all project planning and development efforts as Scrum Lead. Served as primary liaison between industry stakeholders, university faculty, and development team to align on delivery timelines}
+        %\resumeItem{Developed full-stack application (Go Fiber, TypeScript, React) for managing recipients of major incident alarms. Released globally to 3000+ beta users, reducing incident remediation times 6\% by replacing legacy email chains}
+        \resumeItem{Developed full-stack platform extension for GitHub Classroom (Go Fiber, TypeScript, React) to introduce grading functionality and assignment analytics. Released beta version to 4 courses, serving 1000+ students and 50+ graders}
+        \resumeItem{Designed scalable and highly-available AWS cloud architecture using Terraform. Deployed Dockerized backend on ECS with Fargate and frontend on S3/CloudFront, reducing forecasted costs 30\% with AWS CloudWatch for resource scaling}
+        % \resumeItem{Provisioned AWS infrastructure with Terraform, deploying backend on ECS Fargate and frontend on S3/CloudFront. Reduced costs by integrating AWS CloudWatch for dynamic resource scaling and AWS ALB for load balancing}
+    \resumeItemListEnd
+    \experienceHeading
       {Software Engineer Intern}{May 2024 -- August 2024}
       {Salesforce}{San Francisco, CA}
       \resumeItemListStart
@@ -185,12 +197,26 @@
         %\resumeItem{Implemented 2 Spring Boot REST APIs to interface with IDP services, supporting development by authoring ADR's}
         %\resumeItem{Spearheaded admin console enhancements for MuleSoft's Intelligent Document Processing (IDP) feature, empowering hundreds of daily users to query, re-configure, and troubleshoot failed executions using AngularJS and Bootstrap}
         %\resumeItem{Spearheaded launch of admin console for Intelligent Document Processing (IDP) product with Angular and Bootstrap, empowering hundreds of daily users to manage ongoing and failed IDP executions in centralized application}
-        \resumeItem{Extended 2 Spring Boot/WebFlux APIs with 8 new routes to introduce admin functionality in Intelligent Document Processing tool, enhancing data management (Postgres, Redis) and runtime microservices (AWS Textract)}
+
+        %\resumeItem{Spearheaded launch of IDP Admin Console UI, delivering 12 monitoring features with AngularJS and Bootstrap. Reduced average troubleshooting time 30\% by shifting solution engineers from terminal to centralized application}
+        \resumeItem{Launched Admin Console UI for Intelligent Document Processing (IDP) tool, delivering 12 features to 80 DAU with AngularJS and Bootstrap. Reduced average troubleshooting time 30\% by replacing previous terminal-based solution}
+    
+        
+        %\resumeItem{Extended 2 Spring Boot/WebFlux APIs with 8 new routes to introduce admin functionality in Intelligent Document Processing tool, enhancing data management (PostgreSQL, Redis) and runtime microservices (AWS Textract)}
+        %\resumeItem{Extended 2 Spring Boot/WebFlux APIs with 8 routes to support debugging functionality offered in IDP admin console}
+        \resumeItem{Constructed 8 routes for Spring Boot/WebFlux API to support debugging functionality offered in IDP Admin Console}
+        
         % \resumeItem{Propelled Salesforce Einstein LLM integration, minimizing AWS dependencies and introducing tailored IDP features}
         %\resumeItem{Propelled Salesforce LLM Gateway integration for IDP, broadening supported models to expand user base 20\%. Improved average result's confidence scores 8\% and reduced operational costs through leveraging in-house solution}
-        \resumeItem{Spearheaded launch of IDP Admin Console UI, delivering 12 monitoring features with AngularJS and Bootstrap. Reduced average troubleshooting time 30\% by shifting solution engineers from terminal to centralized application}
+        
+        
+
         %\resumeItem{Propelled Salesforce LLM Gateway integration by researching performance and functional impacts of PII masking. Enabled expansion of supported models, broadening user base and improving average result confidence scores 8\%}
-        \resumeItem{Researched performance/functional impacts of LLM Gateway integration using Kubernetes and Splunk. Enabled expansion of supported models, boosting average confidence scores 8\% and broadening customer base}
+        
+        %\resumeItem{Propelled LLM Gateway integration by researching its performance/functional impacts using Kubernetes and Splunk}
+        %\resumeItem{Researched performance/functional impacts of LLM Gateway integration using Kubernetes and Splunk. Enabled expansion of supported models, leading to expanded customer base and 8\% increase in average confidence scores}
+        \resumeItem{Researched impacts of LLM Gateway integration with Kubernetes/Splunk, enabling expansion of supported models}
+        
         \resumeItem{Eliminated 80\% of manual validation in human review tasks by refactoring scope of extraction criteria enforcement}
         %\resumeItem{Implemented per-org rate limiting and length restrictions, reducing system crashes 10\% by mitigating noisy neighbors}
         %\resumeItem{Built dynamic data redaction service, removing sensitive information based on user's authorization level}
@@ -198,27 +224,35 @@
       \resumeItemListEnd
   
     \experienceHeading
-      {Software Tools Co-Op}{July 2023 -- December 2023}
+      {Software Engineer Co-Op}{July 2023 -- December 2023}
       {Insulet Corporation}{Acton, MA}
       \resumeItemListStart
         %\resumeItem{Developed C\# solution for insulin pump quality assurance, introducing asynchronous validation of up to 200 units. Reduced batch processing time by 2 hours and slashed manual labor by 80\%, enhancing manufacturing throughput}
         %\resumeItem{Developed C\# solution for insulin pump quality testing, introducing asynchronous validation up to 200 units. Designed .NET API and integrated MySQL database, cutting batch processing time 2 hours and slashing manual labor 60\%}
         %\resumeItem{Developed application for asynchronous insulin pump testing with C\# and .NET API, cutting batch processing by time 2 hours. Integrated MySQL to scale concurrent product validation 20$\times$ up to 200 units per machine}
-        %\resumeItem{Expanded C\# solution for insulin pump quality assurance, introducing asynchronous validation of up to 200 units \\ with .NET API and MySQL. Reduced batch processing time by 2 hours and slashed related manual labor}
-        \resumeItem{Automated hardware connectivity testing in quality assurance tool with C\# and MySQL, scaling batch capacity 500\%. Reduced batch processing time by 2 hours and slashed related manual labor}
+        %\resumeItem{Expanded C\# solution for insulin pump quality assurance, introducing asynchronous validation of up to 200 units \\ with .NET API and MySQL. Reduced batch processing time by 2 hours and slashed related manual labor}        
+        %\resumeItem{Initiated team's transition to automated API testing, demonstrating POC by automating 42 manual software tests with Python. Consequently spearheaded ReadyAPI integration, mitigating human interaction to cut test suite run time 80\%}
+
+        %\resumeItem{Initiated team's transition to automated API testing, demonstrating POC by automating 42 manual tests with Python}
+        %\resumeItem{Slashed release cycle duration 80\% by introducing ReadyAPI tool to minimize human interaction during integration testing. Hosted ReadyAPI training workshops for quality assurance team to ensure efficient adoption}
+
+        \resumeItem{Initiated team's transition to automated API testing, demonstrating POC by automating 42 manual tests with Python. Slashed release cycle duration 80\% by introducing ReadyAPI to minimize human interaction during integration testing}
+        
+        %\resumeItem{Automated hardware connectivity testing in quality assurance tool with C\# and MySQL, scaling batch capacity 500\%}
+        \resumeItem{Scaled batch capacity 500\% in quality assurance tool by automating hardware connectivity testing with C\#/MySQL}
+        % \resumeItem{Developed quality assurance application (C\#, .NET, MySQL) to test insulin pump connectivity/functionality. Reduced processing times 60\% by introducing batch executions .}
         
         %\resumeItem{Automated insulin pump connectivity testing in C\# quality assurance tool, slashing batch processing time by 2 hours}
         %\resumeItem{Developer C\# application for asynchronous insulin pump quality testing with .NET API and MySQL, cutting batch processing time 2 hours, scaling concurrent product validation 20$\times$, and slashing related manual labor 60\%}
         
         %\resumeItem{Pioneered team's transition to automated API testing, eliminating human interaction to reduce test suite run time 80\%}
-        \resumeItem{Pioneered team's transition to automated API testing by automating execution of 42 manual software tests with Python. Consequently spearheaded integration of ReadyAPI, mitigating human interaction to reduce test suite run time 80\%}
         %\resumeItem{Pioneered team's transition to automated API testing, mitigating human interaction to reduce test suite run time 80\%}
         % \resumeItem{Automated execution and documentation of 42 manual tests with Python, resulting in team's transition to automated API testing. Spearheaded integration of ReadyAPI, reducing manual test run time 90\% and minimizing human error}
         % \resumeItem{Developed and maintained 3 .NET applications, helping scale concurrent quality testing for manufacturing team}
         %\resumeItem{Pioneered transition to automated API testing, reducing test run time 90\% and transforming new product's test design}
         %\resumeItem{Automated execution and documentation of 42 manual tests with Python, Python requests library, and HelixALM API}
         %\resumeItem{Collaborated biweekly with 3 engineers to plan future product architecture, drafting component design and interaction}
-        \resumeItem{Implemented workflow encapsulation using publisher-subscriber design, enhancing GUI with 3 live status indicators}
+        \resumeItem{Designed app workflow encapsulation using publisher-subscriber design, enhancing GUI with 3 live status indicators}
         \resumeItem{Refactored hardware interaction layer with template method pattern, maximizing modularity across 14 response classes}
         % \resumeItem{Enhanced code maintainability by refactoring entire hardware interaction infrastructure to adhere to SOLID principle}
       \resumeItemListEnd
@@ -227,45 +261,78 @@
       {Software Engineer Intern}{May 2022 -- December 2022}
       {Ultimate Kronos Group (UKG)}{Virtual}
       \resumeItemListStart
-        \resumeItem{Earned Employee of Month and job extension offer after solving critical system failure impacting 4 high-value clients}
-        \resumeItem{Diagnosed and resolved 31 software bugs by interfacing with customers, implementing fixes using C\# and Angular}
+        \resumeItem{Earned Employee of Month and job extension offer for resolving fatal system crash from external dependency failures}
+        \resumeItem{Diagnosed and resolved 31 software bugs by interfacing with clients, implementing fixes using C\#/Angular/MySQL}
         % \resumeItem{Interacted with clients to debug environment issues using C\#, HTML, and SQL, improving user experience. Earned Employee of Month award and internship extension offer after resolving critical defect for high-value clients}
         \resumeItem{Built app in internal Hackathon to automate local environment setup, reducing average onboarding time by 2 days}
-        \resumeItem{Directed one Agile stand-up meeting per week for 10-member team, demonstrating leadership and initiative}
-        \resumeItem{Debugged 70+ failing end-to-end tests using Selenium and NUnit, contributing to 8\% improvement in test coverage}
+        % \resumeItem{Directed one Agile stand-up meeting per week for 10-member team, demonstrating leadership and initiative}
+        % \resumeItem{Debugged 70+ failing end-to-end tests using Selenium and NUnit, contributing to 8\% improvement in test coverage}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+%-----------EXTRACURRICULARS-----------
+% \section{Campus Experience}
+%     \resumeSubHeadingListStart
+%     \experienceHeading
+%       {Research Assistant}{September 2024 -- Present}
+%       {Northeastern University}{Boston, MA}
+%       \resumeItemListStart
+%         \resumeItem{Explored cloud-native development principles with Northeastern faculty, earning AWS Cloud Practitioner Certification} 
+%         \resumeItem{Researched latency reduction in K8s scheduling algorithms, focusing on optimizing node locality in edge computing}
+%     \resumeItemListEnd
+%     \experienceHeading
+%       {Project Lead}{September 2024 -- Present}
+%       {KTP Group}{Boston, MA}
+%       \resumeItemListStart
+%         \resumeItem{Directed 28 students to develop and deploy SaaS app for discovering and applying to on-campus student organizations}
+%         \resumeItem{Designed software/cloud architecture, selected tech stack (React, Spring Boot), and oversaw all development efforts}
+%     \resumeItemListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{High-Performance Data Pipeline} $|$ \emph{Python, PyTorch, Kafka, PySpark, MariaDB}}{June 2024}
+        \resumeItemListStart
+            \resumeItem{Engineered data pipeline with 3 web scrapers and 2 Finance APIs, extracting and calculating 20+ financial metrics}
+            \resumeItem{Optimized processing latency and scalability in distributed data streams by integrating Kafka and PySpark}
+            \resumeItem{Trained BiGRU neural network with PyTorch, predicting direction and degree of stock movement in real-time}
+        \resumeItemListEnd
+        \resumeProjectHeading 
+            {\textbf{Facial Detection Attendance Tracker} $|$ \emph{Python, GCP, Azure, OpenCV}}{January 2024}
+            \resumeItemListStart
+                \resumeItem{Designed facial recognition system to automate roll call at club meetings of 100+ members, achieving 0.913 AUC-ROC}
+                \resumeItem{Slashed API calls 80\% by integrating GCP's Video Intelligence to identify and skip all video segments without faces}
+                \resumeItem{Leveraged Azure's Face API and OpenCV to annotate detected faces with bounding boxes and predicted labels}
+    \resumeSubHeadingListEnd
+
+% \section{Projects}
+%     \resumeSubHeadingListStart
         % \resumeProjectHeading 
         %     {\textbf{Twitter Stock Predictor} $|$ \emph{Python, Pytorch, Sklearn, Pandas, Twscrape, YFinance}}{May 2024}
         %     \resumeItemListStart
         %         \resumeItem{Engineered data pipeline to scrape and pre-process Twitter data, increasing dataset by $\sim$150,000 entries per day. Fine-tuned RoBERTA model to classify Tweets related to stock tickers, surpassing Regex model by 20\% accuracy}
         %         \resumeItem{Trained 4 regression models to predict short-term price movement using sentiment analysis and injected YFinance data}
         %     \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{High-Performance Data Pipeline} $|$ \emph{Python, PyTorch, Kafka, PySpark, MariaDB}}{June 2024}
-        \resumeItemListStart
-            %\resumeItem{Engineered high-performance data pipeline using Apache Kafka and PySpark, optimizing processing latency in distributed data streams. Integrated MariaDB for scalable and reliable data warehousing of 20+ financial metrics}
-            %\resumeItem{Trained BiGRU neural network with PyTorch for financial market predictions and real-time forecasting}
-            \resumeItem{Engineered data pipeline with 3 web scrapers and 2 Finance APIs, extracting and calculating 20+ financial metrics \\
-            (e.g., order volume imbalance, micro-price, Bollinger Bands). Warehoused data using MariaDB}
-            \resumeItem{Optimized processing latency and scalability in distributed data streams by integrating Kafka and PySpark}
-            \resumeItem{Trained BiGRU neural network with PyTorch, predicting direction and degree of stock movement in real-time}
-        \resumeItemListEnd
-        \resumeProjectHeading 
-            {\textbf{Facial Detection Attendance Tracker} $|$ \emph{Python, Google Cloud Platform, Azure, OpenCV}}{January 2024}
-            \resumeItemListStart
-                \resumeItem{Designed facial recognition system to automate roll call at club meetings of 100+ members}
-                \resumeItem{Slashed API calls 80\% by integrating GCP's Video Intelligence to identify and skip all video segments without faces}
-                \resumeItem{Leveraged Azure's Face API and OpenCV to annotate detected faces with bounding boxes and predicted labels}
-                %\resumeItem{Enhanced manual analytics by annotating detected faces in input video using Google's Video Intelligence and OpenCV}
-                % \resumeItem{Leveraged Azure Face API to train facial recognition model, achieving 96.2\% accuracy in identifying attendees}
-            \resumeItemListEnd
+        % \resumeProjectHeading
+        %     {\textbf{High-Performance Data Pipeline} $|$ \emph{Python, PyTorch, Kafka, PySpark, MariaDB}}{June 2024}
+        % \resumeItemListStart
+        %     %\resumeItem{Engineered high-performance data pipeline using Apache Kafka and PySpark, optimizing processing latency in distributed data streams. Integrated MariaDB for scalable and reliable data warehousing of 20+ financial metrics}
+        %     %\resumeItem{Trained BiGRU neural network with PyTorch for financial market predictions and real-time forecasting}
+        %     \resumeItem{Engineered data pipeline with 3 web scrapers and 2 Finance APIs, extracting and calculating 20+ financial metrics}
+        %     \resumeItem{Optimized processing latency and scalability in distributed data streams by integrating Kafka and PySpark}
+        %     \resumeItem{Trained BiGRU neural network with PyTorch, predicting direction and degree of stock movement in real-time}
+        % \resumeItemListEnd
+        % \resumeProjectHeading 
+        %     {\textbf{Facial Detection Attendance Tracker} $|$ \emph{Python, Google Cloud Platform, Azure, OpenCV}}{January 2024}
+        %     \resumeItemListStart
+        %         \resumeItem{Designed facial recognition system to automate roll call at club meetings of 100+ members}
+        %         \resumeItem{Slashed API calls 80\% by integrating GCP's Video Intelligence to identify and skip all video segments without faces}
+        %         \resumeItem{Leveraged Azure's Face API and OpenCV to annotate detected faces with bounding boxes and predicted labels}
+        %         %\resumeItem{Enhanced manual analytics by annotating detected faces in input video using Google's Video Intelligence and OpenCV}
+        %         % \resumeItem{Leveraged Azure Face API to train facial recognition model, achieving 96.2\% accuracy in identifying attendees}
+        %     \resumeItemListEnd
         % \resumeProjectHeading
         %       {\textbf{Full-Stack 2048 Game} $|$ \emph{Typescript, React, Express.js, MongoDB, REST API}}{August 2023}
         %       \resumeItemListStart
@@ -314,7 +381,7 @@
         %        \resumeItem{Designed and developed online chatroom, employing hub-and-spoke architecture for efficient server communication}
         %        \resumeItem{Incorporated multi-threading to manage user registration and message transmission, supporting 50+ concurrent users}
         %  \resumeItemListEnd
-    \resumeSubHeadingListEnd
+    % \resumeSubHeadingListEnd
 
 %-----------EXTRACURRICULARS-----------
 % \section{Leadership and Activities}
@@ -334,12 +401,12 @@
         %         \resumeItem{Recruited external student groups and volunteer teams to maximize engagement, boosting annual revenue by 20\%}
         %         % \resumeItem{Managed volunteer teams and paired with student groups to maximize engagement and boost annual revenue by 20\%}
         %       \resumeItemListEnd
-    % \resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd
 
 \section{Activities \& Interests}
  \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Activities:XXX}}, itemsep=0.5pt, parsep=0.5pt]
   \small
-  \item[Activities:] Fundraiser Coordinator (\textit{Breakthrough T1D}), Undergraduate Career Mentor
+  \item[Activities:] Fundraiser Coordinator (Raised \$40,000 for \textit{Breakthrough T1D}), Undergraduate Career Mentor
   \item[Interests:] Downhill Longboarding, Coffee, Mechanical Keyboards, Traveling, Restaurants, Bodybuilding
 \end{description}
 \vspace{-10pt}
