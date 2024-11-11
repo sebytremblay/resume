@@ -145,7 +145,7 @@
       {Northeastern University}{Boston, MA}
       {Candidate for B.S. in Computer Science, Minor in Mathematics}{September 2021 -- May 2025}
     \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Achievements:X}}, itemsep=0.5pt, parsep=0.5pt]
-      \item[\small{Achievements:}] \small 3.99/4.00 GPA, Huntington 100 Scholar, Dean's Scholarship, Dean’s List Award ($\times 6$)
+      \item[\small{Achievements:}] \small 3.99/4.00 GPA, Huntington 100 Scholar, Dean's Scholarship, Dean’s List Award ($\times 5$)
       \item[\small{Coursework:}] \small Algorithms \& Data Structures, Object Oriented Design, Database Design, Networking \& Distributed Systems, NLP, Machine Learning I/II, Multivariable Calculus, Probability \& Statistics, Linear Algebra
     \end{description}
     \vspace{-8pt}
@@ -155,7 +155,7 @@
 \section{Technical Skills}
  \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Programming Languages:XX}}, itemsep=0.5pt, parsep=0.5pt]
   \item[\small{Languages:}] \small Java, Python,  C\#, SQL, TypeScript, JavaScript
-  \item[\small{Technologies \& Tools:}] \small Spring, MySQL, PostgreSQL, Angular, React, Pandas, Kafka, Terraform, Git, Docker, Kubernetes, Unix, Linux
+\item[\small{Technologies \& Tools:}] \small Spring, MySQL, PostgreSQL, Angular, React, Pandas, NumPy, Kafka, Terraform, Docker, Kubernetes, Unix, Linux
   % \item[\small{Developer Tools:}] \small Git, Docker, Kubernetes, Unix, Linux, Jira
   \item[\small{Certifications:}] \small AWS Cloud Practitioner
 \end{description}
@@ -195,7 +195,7 @@
         %\resumeItem{Spearheaded launch of admin console for Intelligent Document Processing (IDP) product with Angular and Bootstrap, empowering hundreds of daily users to manage ongoing and failed IDP executions in centralized application}
 
         %\resumeItem{Spearheaded launch of IDP Admin Console UI, delivering 12 monitoring features with AngularJS and Bootstrap. Reduced average troubleshooting time 30\% by shifting solution engineers from terminal to centralized application}
-        \resumeItem{Launched Admin Console UI for Intelligent Document Processing (IDP) tool, delivering 12 features to 80 DAU with AngularJS and Bootstrap. Reduced average troubleshooting time 30\% by replacing previous terminal-based solution}
+        \resumeItem{Launched Admin Console UI for Intelligent Document Processing (IDP) tool, delivering 12 features to 40 DAU with AngularJS and Bootstrap. Reduced average troubleshooting time 30\% by replacing previous terminal-based solution}
     
         
         %\resumeItem{Extended 2 Spring Boot/WebFlux APIs with 8 new routes to introduce admin functionality in Intelligent Document Processing tool, enhancing data management (PostgreSQL, Redis) and runtime microservices (AWS Textract)}
@@ -289,12 +289,21 @@
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\textbf{High-Performance Data Pipeline} $|$ \emph{Python, PyTorch, Kafka, PySpark, MariaDB}}{June 2024}
+            {\textbf{Raft Protocol} $|$ \emph{Python}}{April 2024}
         \resumeItemListStart
-            \resumeItem{Engineered data pipeline with 3 web scrapers and 2 Finance APIs, extracting and calculating 20+ financial metrics}
-            \resumeItem{Optimized processing latency and scalability in distributed data streams by integrating Kafka and PySpark}
-            %\resumeItem{Trained BiGRU neural network with PyTorch, predicting direction and degree of stock movement in real-time}
+            % \resumeItem{Implemented Raft consensus protocol to handle network partitions and leader failures in distributed key-value datastore}
+            % \resumeItem{Tolerated multi-node failures and $>25\%$ message loss in simulated environment, achieving 99.8\% consensus success rate}
+
+            \resumeItem{Implemented Raft consensus protocol to tolerate multi-node failures and message loss in distributed key-value datastore}
+            \resumeItem{Achieved 99.8\% consensus success rate in simulated network, ensuring zero packet duplication and minimal redirects}
         \resumeItemListEnd
+        % \resumeProjectHeading
+        %     {\textbf{High-Performance Data Pipeline} $|$ \emph{Python, PyTorch, Kafka, PySpark, MariaDB}}{June 2024}
+        % \resumeItemListStart
+        %     \resumeItem{Engineered data pipeline with 3 web scrapers and 2 Finance APIs, extracting and calculating 20+ financial metrics}
+        %     \resumeItem{Optimized processing latency and scalability in distributed data streams by integrating Kafka and PySpark}
+        %     %\resumeItem{Trained BiGRU neural network with PyTorch, predicting direction and degree of stock movement in real-time}
+        % \resumeItemListEnd
         \resumeProjectHeading 
             {\textbf{Facial Detection Attendance Tracker} $|$ \emph{Python, GCP, Azure, OpenCV}}{January 2024}
             \resumeItemListStart
