@@ -42,11 +42,7 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\usepackage[margin=.5in,top=.35in,bottom=.35in]{geometry}
 
 \urlstyle{same}
 
@@ -155,9 +151,9 @@
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Frameworks \& Libraries:XXX}}, itemsep=0.5pt, parsep=0.5pt]
-    \item[\small{Languages:}] \small Java, Python,  C\#, TypeScript, JavaScript, SQL, C
-    \item[\small{Frameworks \& Libraries:}] \small Spring, Angular, React, Pandas, NumPy, Flask, Scikit-Learn
-    \item[\small{Tools:}] \small PostgreSQL, MySQL, Redis, Docker, Kubernetes, Terraform, Kafka
+    \item[\small{Languages:}] \small Java, Python,  C\#, TypeScript, Go, C
+    \item[\small{Frameworks \& Libraries:}] \small Spring, Angular, React, Pandas
+    \item[\small{Tools:}] \small PostgreSQL, MySQL, Redis, Docker, Kubernetes, Terraform
   % \item[\small{Developer Tools:}] \small Git, Docker, Kubernetes, Unix, Linux, Jira
   \item[\small{Certifications:}] \small AWS Cloud Practitioner
 \end{description}
@@ -181,12 +177,21 @@
       \resumeItemListStart
         % \resumeItem{Managed team of five co-op developers, overseeing all project planning and development efforts as Scrum Lead. Served as primary liaison between industry stakeholders, university faculty, and development team to align on delivery timelines}
         %\resumeItem{Developed full-stack application (Go Fiber, TypeScript, React) for managing recipients of major incident alarms. Released globally to 3000+ beta users, reducing incident remediation times 6\% by replacing legacy email chains}
-        \resumeItem{Designed and launched full-stack grading extension for GitHub (\textit{TypeScript, React, Go Fiber, PostgreSQL}) to replace university's grading tool for CS/DS classes. Released beta version to 4 courses, serving 700+ students and 40+ graders}
-        %\resumeItem{Designed and launched full-stack grading extension for GitHub (\textit{TypeScript, React, Go Fiber, PostgreSQL}) to replace university's grading tool for CS/DS classes. Conducted market outreach to release beta version to intro courses}
-        \resumeItem{Managed team of five co-op developers, acting as primary liaison between university stakeholders and development team. Led all scoping and project planning with Agile ceremonies, incorporating individualized check-ins and feedback}
+        \resumeItem{Built and launched full-stack grading extension for GitHub (\textit{TypeScript, React, Go Fiber, PostgreSQL}) to replace legacy grading tool for programming courses. Released beta version to four classes, serving 700+ students and 40+ graders}
+        %\resumeItem{Architected and launched full-stack grading extension for GitHub (\textit{TypeScript, React, Go Fiber, PostgreSQL}) to replace university's grading tool for CS/DS classes. Conducted market outreach to release beta version to intro courses}
+        %\resumeItem{Managed team of five co-op developers, acting as primary liaison between university stakeholders and development team. Led all scoping and project planning with Agile ceremonies, incorporating individualized check-ins and feedback}
+        \resumeItem{Managed team of five co-op developers, leading development efforts through Agile ceremonies, personalized check-ins, and code reviews. Partnered with university stakeholders to define product requirements, scope, and release timeline}
         %\resumeItem{Designed AWS architecture, minimizing costs and achieving 99.99\% uptime to meet product SLAs. Provisioned solution with Terraform, deploying Dockerized backend on ECS with Fargate and frontend on S3/CloudFront}
-        \resumeItem{Engineered cost-effective AWS architecture, reducing OPEX 17\% while maintaining 99.99\% uptime. Automated resource provisioning with Terraform, deploying Dockerized backend on AWS ECS with Fargate and frontend on S3/CloudFront}
+        %\resumeItem{Designed cost-effective AWS architecture, reducing OPEX 14\% while maintaining 99.99\% uptime. Automated resource provisioning with Terraform, deploying Dockerized backend on AWS ECS with Fargate and frontend on S3/CloudFront}
+        \resumeItem{Designed resilient AWS architecture, achieving 99.99\% uptime through auto-scaling policies, automatic failover, and load balancing. Provisioned resources with Terraform, deploying Dockerized microservices on AWS ECS with Fargate}
+        \resumeItem{Amplified system scalability by integrating Redis for caching/session management, slashing GitHub API queries 30\%}
+        %\resumeItem{Designed AWS architecture, achieving 99.99\% uptime through with auto scaling and . Automated resource provisioning with Terraform, deploying Dockerized backend on AWS ECS with Fargate and frontend on S3/CloudFront}
+
+    
+
+        
         %\resumeItem{Provisioned scalable and highly-available AWS cloud architecture with Terraform. Deployed Dockerized backend on ECS with Fargate and frontend on S3/CloudFront, utilizing load balancers and elasticity to achieve 99.99\% uptime}
+        
         % \resumeItem{Provisioned AWS infrastructure with Terraform, deploying backend on ECS Fargate and frontend on S3/CloudFront. Reduced costs by integrating AWS CloudWatch for dynamic resource scaling and AWS ALB for load balancing}
     \resumeItemListEnd
     \experienceHeading
@@ -199,7 +204,7 @@
         %\resumeItem{Spearheaded launch of admin console for Intelligent Document Processing (IDP) product with Angular and Bootstrap, empowering hundreds of daily users to manage ongoing and failed IDP executions in centralized application}
 
         %\resumeItem{Spearheaded launch of IDP Admin Console UI, delivering 12 monitoring features with AngularJS and Bootstrap. Reduced average troubleshooting time 30\% by shifting solution engineers from terminal to centralized application}
-        \resumeItem{Launched Admin Console UI for Intelligent Document Processing (IDP) tool, delivering 12 features to 40 WAU with AngularJS and Bootstrap. Reduced average troubleshooting time 30\% by replacing previous terminal-based solution}
+        \resumeItem{Launched Admin Console UI for Intelligent Document Processing (IDP) tool, releasing 12 monitoring features to \\ 40 WAU (\textit{AngularJS, Bootstrap}). Reduced average troubleshooting time 30\% by replacing legacy terminal solution}
     
         
         %\resumeItem{Extended 2 Spring Boot/WebFlux APIs with 8 new routes to introduce admin functionality in Intelligent Document Processing tool, enhancing data management (PostgreSQL, Redis) and runtime microservices (AWS Textract)}
@@ -215,7 +220,7 @@
         
         %\resumeItem{Propelled LLM Gateway integration by researching its performance/functional impacts using Kubernetes and Splunk}
         %\resumeItem{Researched performance/functional impacts of LLM Gateway integration using Kubernetes and Splunk. Enabled expansion of supported models, leading to expanded customer base and 8\% increase in average confidence scores}
-        \resumeItem{Researched impacts of LLM Gateway integration with Kubernetes/Splunk, enabling expansion of supported models}
+        \resumeItem{Analyzed impacts of LLM Gateway integration using Kubernetes/Splunk, enabling expansion of supported models}
         
         \resumeItem{Eliminated 80\% of manual validation in human review tasks by refactoring scope of extraction criteria enforcement}
         %\resumeItem{Implemented per-org rate limiting and length restrictions, reducing system crashes 10\% by mitigating noisy neighbors}
@@ -224,7 +229,7 @@
       \resumeItemListEnd
   
     \experienceHeading
-      {Software Engineer Co-Op}{July 2023 -- December 2023}
+      {Software Tools Co-Op}{July 2023 -- December 2023}
       {Insulet Corporation}{Acton, MA}
       \resumeItemListStart
         %\resumeItem{Developed C\# solution for insulin pump quality assurance, introducing asynchronous validation of up to 200 units. Reduced batch processing time by 2 hours and slashed manual labor by 80\%, enhancing manufacturing throughput}
@@ -235,8 +240,11 @@
 
         %\resumeItem{Initiated team's transition to automated API testing, demonstrating POC by automating 42 manual tests with Python}
         %\resumeItem{Slashed release cycle duration 80\% by introducing ReadyAPI tool to minimize human interaction during integration testing. Hosted ReadyAPI training workshops for quality assurance team to ensure efficient adoption}
-        \resumeItem{Developed tool to automate hardware connectivity testing (\textit{C\#, MySQL}), scaling quality assurance throughput 230\%}
-        \resumeItem{Pioneered transition to automated API testing, showcasing POC by converting 42 manual tests into Python scripts. Slashed release cycle duration 80\% by leading ReadyAPI integration to reduce manual efforts in integration testing}
+        %\resumeItem{Developed tool to automate hardware connectivity testing (\textit{C\#, MySQL}), scaling quality assurance throughput 230\%}
+        %\resumeItem{Developed C\# tool to automate quality assurance for insulin pump, scaling throughput 230\%}
+        %\resumeItem{Developed quality assurance tool to automate insulin pump connectivity and responsiveness testing (\textit{C\#, MySQL}). Reduced batch processing time 20\% by minimizing manual intervention, helping scale production throughput}
+        \resumeItem{Developed quality assurance tool to automate insulin pump connectivity and responsiveness testing (\textit{C\#, MySQL})}
+        \resumeItem{Pioneered transition to automated API testing, showcasing POC by converting 42 manual tests into Python scripts. Slashed release cycle duration 80\% by spearheading ReadyAPI adoption to reduce manual efforts in integration testing}
         %\resumeItem{Automated hardware connectivity testing in quality assurance tool with C\# and MySQL, scaling batch capacity 500\%}
         % \resumeItem{Developed quality assurance application (C\#, .NET, MySQL) to test insulin pump connectivity/functionality. Reduced processing times 60\% by introducing batch executions .}  
         %\resumeItem{Automated insulin pump connectivity testing in C\# quality assurance tool, slashing batch processing time by 2 hours}
@@ -248,7 +256,7 @@
         %\resumeItem{Pioneered transition to automated API testing, reducing test run time 90\% and transforming new product's test design}
         %\resumeItem{Automated execution and documentation of 42 manual tests with Python, Python requests library, and HelixALM API}
         %\resumeItem{Collaborated biweekly with 3 engineers to plan future product architecture, drafting component design and interaction}
-        \resumeItem{Introduced app workflow encapsulation using publisher-subscriber design, enhancing GUI with 3 live status indicators}
+        \resumeItem{Redesigned app workflows to support nested processes via pub-sub design, enhancing granularity of 3 status indicators}
         \resumeItem{Refactored hardware interaction layer with template method pattern, maximizing modularity across 14 response classes}
         % \resumeItem{Enhanced code maintainability by refactoring entire hardware interaction infrastructure to adhere to SOLID principle}
       \resumeItemListEnd
@@ -288,35 +296,36 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+        % \resumeProjectHeading
+            % {\textbf{Kubernetes Optimization Research} $|$ \emph{Distributed Systems, Scalability, Performance}}{October 2024}
+        % \resumeItemListStart
+            % %\resumeItem{Revealed performance and scalability limitations in default Kubernetes scheduler caused by lack of context awareness}
+            % \resumeItem{Explored scalability constraints in Kubernetes scheduler, revealing performance impacts of limited contextual awareness}
+            % \resumeItem{Benchmarked hardware-aware scheduling methods to optimize efficiency and resource utilization in GPU-intensive jobs}
+        % \resumeItemListEnd
         \resumeProjectHeading
-            {\textbf{Raft Consensus Protocol} $|$ \emph{Python}}{April 2024}
+            {\textbf{Raft Consensus Protocol} $|$ \emph{Python, Networking, Reliability}}{April 2024}
         \resumeItemListStart
-            %\resumeItem{Implemented Raft consensus protocol to tolerate network partitions and leader failures in distributed datastore}
-            % \resumeItem{Tolerated multi-node failures and $>25\%$ message loss in simulated environment, achieving 99.8\% consensus success rate}
-
-            %\resumeItem{Implemented Raft consensus protocol to tolerate multi-node failures and message loss in distributed key-value datastore}
-            %\resumeItem{Achieved 99.82\% success rate for requests in simulated network, ensuring zero packet duplication and minimal redirects} 
-
-            \resumeItem{Designed and implemented Raft consensus protocol to promote fault-tolerance and consistency in distributed datastore}
+            \resumeItem{Designed and implemented Raft consensus protocol to promote fault-tolerance and consistency in distributed data store}
             \resumeItem{Achieved 99.92\% request success in simulations of 30\% packet loss, concurrent partitions, and consecutive leader failure}
-            %\resumeItem{Achieved 99.92\% request success rate in simulations with 30\% packet loss, up to 3 concurrent network partitions, and consecutive leader failures}
         \resumeItemListEnd
         % \resumeProjectHeading
-        %     {\textbf{High-Performance Data Pipeline} $|$ \emph{Python, PyTorch, Kafka, PySpark, MariaDB}}{June 2024}
+             % {\textbf{High-Performance Data Pipeline} $|$ \emph{Python, PyTorch, Kafka, PySpark, MariaDB}}{June 2024}
         % \resumeItemListStart
         %     \resumeItem{Engineered data pipeline with 3 web scrapers and 2 Finance APIs, extracting and calculating 20+ financial metrics}
         %     \resumeItem{Optimized processing latency and scalability in distributed data streams by integrating Kafka and PySpark}
         %     %\resumeItem{Trained BiGRU neural network with PyTorch, predicting direction and degree of stock movement in real-time}
         % \resumeItemListEnd
         \resumeProjectHeading 
-            {\textbf{Facial Detection Attendance Tracker} $|$ \emph{Python, GCP, Azure, OpenCV}}{January 2024}
-            \resumeItemListStart
-                %\resumeItem{Designed facial recognition system to automate roll call in meetings, deployed across 10+ on-campus organizations}
-                %\resumeItem{Leveraged GCP Video Intelligence to detect segments in surveillance footage containing faces. Extracted frames with OpenCV, employing techniques like thresholding and Gaussian blurring to reduce noise and improve model accuracy}
-                \resumeItem{Leveraged GCP Video Intelligence to detect segments in surveillance footage with faces. Extracted frames via OpenCV}
-                \resumeItem{Trained custom facial recognition model with Azure Face API to classify extracted images, achieving 0.913 AUC-ROC}
-                %\resumeItem{Slashed API calls 80\% by integrating GCP's Video Intelligence to identify and skip all video segments without faces}
-                %\resumeItem{Leveraged Azure's Face API and OpenCV to annotate detected faces with bounding boxes and predicted labels}
+             {\textbf{Facial Detection Attendance Tracker} $|$ \emph{Python, GCP, Azure, OpenCV}}{January 2024}
+             \resumeItemListStart
+                 %\resumeItem{Designed facial recognition system to automate roll call in meetings, deployed across 10+ on-campus organizations}
+                 %\resumeItem{Leveraged GCP Video Intelligence to detect segments in surveillance footage containing faces. Extracted frames with OpenCV, employing techniques like thresholding and Gaussian blurring to reduce noise and improve model accuracy}
+                 \resumeItem{Leveraged GCP Video Intelligence to detect segments in surveillance footage with faces. Extracted frames via OpenCV}
+                 \resumeItem{Trained custom facial recognition model with Azure Face API to classify extracted images, achieving 0.913 AUC-ROC}
+                 %\resumeItem{Slashed API calls 80\% by integrating GCP's Video Intelligence to identify and skip all video segments without faces}
+                 %\resumeItem{Leveraged Azure's Face API and OpenCV to annotate detected faces with bounding boxes and predicted labels}
+             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 % \section{Projects}
@@ -413,7 +422,7 @@
         %         \resumeItem{Recruited external student groups and volunteer teams to maximize engagement, boosting annual revenue by 20\%}
         %         % \resumeItem{Managed volunteer teams and paired with student groups to maximize engagement and boost annual revenue by 20\%}
         %       \resumeItemListEnd
-    \resumeSubHeadingListEnd
+    %   \resumeSubHeadingListEnd
 
 \section{Activities \& Interests}
  \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Activities:XXX}}, itemsep=0.5pt, parsep=0.5pt]
