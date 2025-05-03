@@ -134,32 +134,6 @@
     \href{https://www.linkedin.com/in/sebastiantremblay/}{\uline{LinkedIn}}
 \end{center}
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Northeastern University}{Boston, MA}
-      {Bachelor of Science in Computer Science, Artificial Intelligence. Mathematics Minor}{May 2025}
-    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Achievements:X}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
-        \item[\textsc{Achievements:}] \small \textbf{3.99/4.00 GPA}, Top 100 Influential Seniors Honoree
-        % ALL:
-        %\item[\textbf{Coursework:}] \small Networking \& Distributed Systems, Algorithms \& Data Structures, Object Oriented Design, Machine Learning I/II, Multivariable Calculus, Stochastic Modeling I/II, Linear Algebra
-
-        % Systems
-        % \item[Coursework:] Networking \& Distributed Systems, Algorithms \& Data Structures, Object Oriented Design
-
-        % Quant
-        % \item[Coursework:] \small Algorithms \& Data Structures, Machine Learning I/II, Stochastic Modeling I/II, Linear Algebra
-
-        % AI
-        % \item[Coursework:] Machine Learning I/II, Natural Language Processing, Linear Algebra
-
-        % Generic:
-        % \item[\textsc{Coursework:}] \small Algorithms, Data Structures, Computer Systems, Software Engineering, Machine Learning I/II
-    \end{description}
-    \vspace{-4pt}
-  \resumeSubHeadingListEnd
-
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{description}[leftmargin=!,labelwidth=\widthof{\textsc{Frameworks/Libraries}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
@@ -197,37 +171,36 @@
         
         \resumeItem{Engineered distributed, event-driven pipeline for processing GitHub webhooks (\textit{Go, AWS SQS}), preserving in-order execution of 20,000 weekly events. Automated retries and dead-letter queues, \textbf{eliminating 95\% of manual recovery}}
         
-        \resumeItem{Managed team of 5 engineers, owning architecture planning, strategic product direction, and one-on-one mentorship}
+        % \resumeItem{Managed team of 5 engineers, owning architecture planning, strategic product direction, and one-on-one mentorship}
+
+        \resumeItem{Amplified scalability by integrating Redis for caching/session management, \textbf{slashing GitHub API queries 22\%}}
     \resumeItemListEnd
     \experienceHeading
       {Software Engineer Intern}{May 2024 -- August 2024}
       {Salesforce}{San Francisco, CA}
       \resumeItemListStart
-        \resumeItem{Architected observability and monitoring console for document processing tool, enabling 60+ weekly users with tools to triage and resolve failures. \textbf{Reduced MTTR 30\%} by replacing terminal-based solution with centralized UI (\textit{Angular})}
+        \resumeItem{Architected observability and monitoring console for document processing tool with $\sim$12,000 WAU, providing tools to triage and resolve failures. \textbf{Reduced MTTR 30\%} by replacing terminal-based solution with centralized UI (\textit{Angular})}
 
-        \resumeItem{Constructed 8 reactive API routes (\textit{Spring WebFlux}) to aggregate runtime metadata across microservices. Queried PostgreSQL and Redis using non-blocking I/O to enable real-time debugging workflows, supporting 1M+ executions}
+        \resumeItem{Informed optimized model rollout strategy in core IDP service by driving integration testing for next-gen LLMs with Kubernetes load tests and Splunk metrics. \textbf{Expanded client coverage 2.4$\times$} and boosted confidence scores $\sim$8\%}
+
+        % \resumeItem{Constructed 8 reactive API routes (\textit{Spring WebFlux}) to aggregate runtime metadata across microservices. Queried PostgreSQL and Redis using non-blocking I/O to enable real-time debugging workflows, supporting 1M+ executions}
+
+        \resumeItem{Constructed reactive API routes (\textit{Spring WebFlux}) to aggregate metadata across 3 microservices. Enabled real-time debugging workflows via non-blocking I/O queries (\textit{R2DBC}), \textbf{supporting 1M+ document processing executions}}
 
         % \resumeItem{Benchmarked performance impacts of integrating next-gen LLMs in core IDP service (\textit{Kubernetes/Splunk}). Enabled expansion of supported models, \textbf{scaling client base 2.4$\times$} with optimized subscription tier coverage}
 
+        % \resumeItem{Orchestrated volunteer event with 40+ attendees and charity presenter. \textbf{Spotlighted on Salesforce's Instagram}}
+
         \resumeItem{Refactored logic and scope for validating document schemas, reducing false errors and \textbf{manual review volume 80\%}}
-
-        \resumeItem{Orchestrated volunteer event with 40+ attendees and charity presenter. \textbf{Spotlighted on Salesforce's Instagram}}
-
-    
-    
-    
-
-    
-    % \resumeItem{Benchmarked performance of large language models in IDP pipeline using Kubernetes load tests and Splunk metrics. Informed optimized model rollout strategy that expanded client coverage 2.4$\times$ while improving resource efficiency}
       \resumeItemListEnd
   
     \experienceHeading
       {Software Tools Co-Op}{July 2023 -- December 2023}
       {Insulet Corporation}{Acton, MA}
       \resumeItemListStart
-        \resumeItem{Developed QA tool to automate medical device connectivity testing (\textit{C\#, MySQL}), processing \textbf{4,800 units per day}}
-        
-        \resumeItem{Slashed duration of tool's release cycle 80\% by \textbf{automating 42 integration testing steps} (\textit{Python}), igniting transition to automated API testing. Spearheaded ReadyAPI adoption, hosting workshops for non-technical QA staff}
+        \resumeItem{Developed QA tool to automate medical device connectivity testing (\textit{C\#, MySQL}), \textbf{processing 4,800 units per day}}
+
+        \resumeItem{Automated 42 acceptance testing steps (\textit{Python}), \textbf{slashing length of tool's release cycle 80\%}. Ignited transition to automated hardware integration testing by spearheading ReadyAPI adoption, hosting workshops for non-technical staff}
       \resumeItemListEnd
 
     \experienceHeading
@@ -235,7 +208,7 @@
       {Ultimate Kronos Group (UKG)}{Virtual}
       \resumeItemListStart
         \resumeItem{Earned Employee of Month award for diagnosing and resolving critical system outages \textbf{affecting 6,000+ customers}}
-        \resumeItem{Developed application in internal hackathon to automate local environment setup for new hires (\textit{Python/Bash Scripts}), reducing average onboarding time by 2 days. Won \textbf{``Fan Favorite" award}, deploying solution to over 300 engineers}
+        \resumeItem{Developed application in internal hackathon to automate local environment setup for new hires (\textit{Python/Bash Scripts}), \textbf{reducing average onboarding time by 2 days}. Won ``Fan Favorite" award, deploying solution to 300+ engineers}
     \resumeItemListEnd
     \vspace{-4pt}
   \resumeSubHeadingListEnd
@@ -254,7 +227,7 @@
 
             \resumeItem{Automated MCTS/Minimax hyperparameter optimization using Optuna with TPE Sampler, bumping win rates 4\%}
 
-            \resumeItem{Constructed distributed cache for solver outcomes, cutting MCTS runtime 35\% and keeping UI latency under 200ms}
+            \resumeItem{Deployed global cache for solver results, avoiding redundancy to cut MCTS runtime 35\% and keep UI latency $<$200ms}
         \resumeItemListEnd
 
 
@@ -301,8 +274,35 @@
     \vspace{-4pt}
     \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Bachelor of Science in Computer Science, Artificial Intelligence. Mathematics Minor}{\textbf{GPA: 3.99/4.00}}
+    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Awards:X}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
+        \item[\textsc{Awards:}] \small Top 100 Influential Seniors Honoree, Dean's Scholarship (\$16,000/yr)
+        % ALL:
+        %\item[\textbf{Coursework:}] \small Networking \& Distributed Systems, Algorithms \& Data Structures, Object Oriented Design, Machine Learning I/II, Multivariable Calculus, Stochastic Modeling I/II, Linear Algebra
+
+        % Systems
+        % \item[Coursework:] Networking \& Distributed Systems, Algorithms \& Data Structures, Object Oriented Design
+
+        % Quant
+        % \item[Coursework:] \small Algorithms \& Data Structures, Machine Learning I/II, Stochastic Modeling I/II, Linear Algebra
+
+        % AI
+        % \item[Coursework:] Machine Learning I/II, Natural Language Processing, Linear Algebra
+
+        % Generic:
+        % \item[\textsc{Coursework:}] \small Algorithms, Data Structures, Computer Systems, Software Engineering, Machine Learning I/II
+    \end{description}
+    \vspace{-4pt}
+  \resumeSubHeadingListEnd
+
+
 %-----------EXTRACURRICULARS-----------
-\section{Passions \& Pursuits}
+\section{Passions}
 \begin{description}[
   leftmargin=!,
   labelwidth=\widthof{\small\scshape Activities:},
@@ -311,8 +311,8 @@
   font=\normalfont\small\scshape
 ]
   \small
-  \item[\textsc{Activities:}] Fundraiser Coordinator (Raised \$65,000 for \textit{Breakthrough T1D}), Undergraduate Career Mentor
-  \item[\textsc{Interests:}] Automation, Electric Longboarding, Teaching, Traveling, Coffee
+  \item[\textsc{Activities:}] Type 1 Diabetes Fundraising (Raised \$65,000 for Breakthrough T1D), Undergraduate Career Mentor
+  \item[\textsc{Interests:}] Automation, Electric Longboarding, Teaching, International Traveling
 \end{description}
 \vspace{-4pt}
 
