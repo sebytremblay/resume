@@ -42,7 +42,7 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\usepackage[margin=.5in]{geometry}
+\usepackage[top=.5in, bottom=.5in, left=.5in, right=.5in]{geometry}
 
 \urlstyle{same}
 
@@ -62,7 +62,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1pt}}
+    {#1 \vspace{-0.6pt}}
   }
 }
 
@@ -128,26 +128,12 @@
     \textbf{\Huge \scshape Sebastian Tremblay} 
     \\ \vspace{1pt}
     \small
-    \href{mailto:tremblay.se@northeastern.edu}{\uline{tremblay.se@northeastern.edu}} $|$
+    \href{mailto:sebastian@tremblay.com}{\uline{sebastian@tremblay.com}} $|$
     \href{https://www.sebytremblay.com}{\uline{Personal Website}} $|$
     \href{https://github.com/sebytremblay}{\uline{GitHub}} $|$
     \href{https://www.linkedin.com/in/sebastiantremblay/}{\uline{LinkedIn}}
 \end{center}
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{description}[leftmargin=!,labelwidth=\widthof{\textsc{Frameworks/Libraries}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
-    % \item[\textsc{Languages:}] \small Java (\textsc{4 yrs}) $\cdot$ Python (\textsc{3 yrs}) $\cdot$ Typescript (\textsc{3 yrs}) $\cdot$ C\# (\textsc{2 yrs}) $\cdot$ C (\textsc{1 yr})
-    % \item[\textsc{Software:}] \small AWS (\textit{Cloud Practitioner}) $\cdot$ Kubernetes $\cdot$ PostgreSQL $\cdot$ Redis $\cdot$ Docker $\cdot$ Terraform
-    % \item[\textsc{Languages:}] \small {\textbf{(Advanced)}} Java $\cdot$ Python $\cdot$ TypeScript
-    % {\textbf{ (Intermediate)}} C\# $\cdot$ Go  $\cdot$ C
-    \item[\textsc{Languages:}] \small Java $\cdot$ Python $\cdot$ TypeScript $\cdot$ Go
-    \item[\textsc{Frameworks/Libraries:}]  Spring WebFlux $\cdot$ Spring Boot $\cdot$ PyTorch $\cdot$ Scikit-Learn $\cdot$ React
-    \item[\textsc{Cloud/DevOps:}] \small AWS (\textit{Cloud Practitioner}) $\cdot$ Kubernetes $\cdot$ Docker $\cdot$ Terraform
-    \item[\textsc{Databases:}] \small Redis $\cdot$ PostgreSQL $\cdot$ MongoDB
-    
-\end{description}
-\vspace{-4pt}
+\vspace{0.75pt}
 
 %-----------EXPERIENCE-----------
 \section{Work Experience}
@@ -165,27 +151,29 @@
       {Founding Engineer}{September 2024 -- Present}
       {GitMarks}{Boston, MA}
       \resumeItemListStart 
-        \resumeItem{Architected Git-native learning management software aimed at exposing students to industry workflows. Spearheaded \textbf{acquisition by Northeastern University}, orchestrating Fall 2025 rollout for 3,000 students across CS/DS courses}
+        \resumeItem{Architected Git-native learning management software to expose students to industry development workflows. Spearheaded adoption by Northeastern University, orchestrating Fall 2025 roll out for 3,000 students}
 
-        \resumeItem{Designed end-to-end cloud infrastructure, ensuring \textbf{99.99\% uptime for 700 weekly users} via auto-scaling policies, active-active failover, and load balancing. Provisioned with Terraform, serving Dockerized microservices on AWS ECS}
-        
-        \resumeItem{Engineered distributed, event-driven pipeline for processing GitHub webhooks (\textit{Go, AWS SQS}), preserving in-order execution of 20,000 weekly events. Automated retries and dead-letter queues, \textbf{eliminating 95\% of manual recovery}}
-        
-        % \resumeItem{Managed team of 5 engineers, owning architecture planning, strategic product direction, and one-on-one mentorship}
+        \resumeItem{Engineered distributed, event-driven pipeline for processing GitHub webhooks (\textit{Go, AWS SQS}), preserving in-order execution of \textbf{20,000 weekly events}. Automated retries and dead-letter queues, eliminating 95\% of manual recovery}
 
-        \resumeItem{Amplified scalability by integrating Redis for caching/session management, \textbf{slashing GitHub API queries 22\%}}
+        \resumeItem{Designed end-to-end AWS infrastructure, ensuring \textbf{99.99\% uptime for 300 weekly users} via auto-scaling policies, active-active failover, and load balancing. Provisioned with Terraform, serving Dockerized microservices on ECS}
+        
+        \resumeItem{Managed team of 5 engineers, owning architecture planning, strategic product direction, and one-on-one mentorship}
+
+        % \resumeItem{Amplified scalability by integrating Redis for caching/session management, slashing GitHub \textbf{API queries 22\%}}
     \resumeItemListEnd
     \experienceHeading
       {Software Engineer Intern}{May 2024 -- August 2024}
       {Salesforce}{San Francisco, CA}
       \resumeItemListStart
-        \resumeItem{Architected observability and monitoring console for document processing tool with $\sim$12,000 WAU, providing tools to triage and resolve failures. \textbf{Reduced MTTR 30\%} by replacing terminal-based solution with centralized UI (\textit{Angular})}
+        \resumeItem{Architected observability and monitoring console for document processing service with $\sim$12,000 WAU, providing tools to triage and resolve failures. \textbf{Reduced MTTR 30\%} by replacing ad-hoc solution with centralized UI (\textit{Angular})}
 
-        \resumeItem{Informed optimized model rollout strategy in core IDP service by driving integration testing for next-gen LLMs with Kubernetes load tests and Splunk metrics. \textbf{Expanded client coverage 2.4$\times$} and boosted confidence scores $\sim$8\%}
+        \resumeItem{Constructed reactive API routes (\textit{Spring WebFlux}) to aggregate metadata across 3 microservices. Enabled real-time debugging workflows for \textbf{1M+ document processing executions} via non-blocking I/O queries (\textit{Redis, R2DBC})}
+
+        % \resumeItem{Informed optimized rollout strategy for next-gen LLMs by benchmarking load tests and analyzing synthetic testing results (\textit{Kubernetes, Splunk}). Expanded \textbf{client coverage 2.4$\times$} and boosted confidence scores $\sim$8\%}
+
+        \resumeItem{Informed optimized rollout strategy for next-gen LLMs by benchmarking load tests and analyzing synthetic testing results (\textit{Kubernetes, Splunk}). New models expanded subscription tier coverage, \textbf{scaling client base 2.4$\times$}}
 
         % \resumeItem{Constructed 8 reactive API routes (\textit{Spring WebFlux}) to aggregate runtime metadata across microservices. Queried PostgreSQL and Redis using non-blocking I/O to enable real-time debugging workflows, supporting 1M+ executions}
-
-        \resumeItem{Constructed reactive API routes (\textit{Spring WebFlux}) to aggregate metadata across 3 microservices. Enabled real-time debugging workflows via non-blocking I/O queries (\textit{R2DBC}), \textbf{supporting 1M+ document processing executions}}
 
         % \resumeItem{Benchmarked performance impacts of integrating next-gen LLMs in core IDP service (\textit{Kubernetes/Splunk}). Enabled expansion of supported models, \textbf{scaling client base 2.4$\times$} with optimized subscription tier coverage}
 
@@ -198,9 +186,9 @@
       {Software Tools Co-Op}{July 2023 -- December 2023}
       {Insulet Corporation}{Acton, MA}
       \resumeItemListStart
-        \resumeItem{Developed QA tool to automate medical device connectivity testing (\textit{C\#, MySQL}), \textbf{processing 4,800 units per day}}
+        \resumeItem{Developed QA tool to automate medical device connectivity testing (\textit{C\#, MySQL}), processing 4,800 units per day}
 
-        \resumeItem{Automated 42 acceptance testing steps (\textit{Python}), \textbf{slashing length of tool's release cycle 80\%}. Ignited transition to automated hardware integration testing by spearheading ReadyAPI adoption, hosting workshops for non-technical staff}
+        \resumeItem{Automated 42 acceptance testing steps (\textit{Python}), \textbf{slashing length of tool's release cycle 80\%}. Ignited transition to automated hardware integration testing by spearheading ReadyAPI adoption, leading workshops for non-technical staff}
       \resumeItemListEnd
 
     \experienceHeading
@@ -208,7 +196,7 @@
       {Ultimate Kronos Group (UKG)}{Virtual}
       \resumeItemListStart
         \resumeItem{Earned Employee of Month award for diagnosing and resolving critical system outages \textbf{affecting 6,000+ customers}}
-        \resumeItem{Developed application in internal hackathon to automate local environment setup for new hires (\textit{Python/Bash Scripts}), \textbf{reducing average onboarding time by 2 days}. Won ``Fan Favorite" award, deploying solution to 300+ engineers}
+        \resumeItem{Developed application in internal hackathon to automate local environment setup for new hires (\textit{Python/Bash Scripts}), reducing average onboarding time by 2 days. Won ``Fan Favorite" award, deploying solution to 300+ engineers}
     \resumeItemListEnd
     \vspace{-4pt}
   \resumeSubHeadingListEnd
@@ -221,13 +209,17 @@
         %     \resumeItem{Bullet #1}
         % \resumeItemListEnd
 
-        \resumeProjectHeading{\textbf{\href{https://github.com/sebytremblay/wordle_bot}{AI Solvers for NYT Wordle \faExternalLink}} $|$ \emph{Python, TypeScript, React, PostgreSQL, Supabase}}{April 2025}
+        \resumeProjectHeading{\textbf{\href{https://wordle.sebytremblay.com}{AI Agents for NYT Wordle \faExternalLink}} $|$ \emph{Python, TypeScript, React, PostgreSQL, Supabase}}{April 2025}
         \resumeItemListStart
-            \resumeItem{Implemented three search agents—Monte Carlo, Greedy, Minimax—for NYT Wordle puzzle, achieving 95.9\% win rate \\ and averaging under 4.25 guesses across 13,000 word dictionary. Built web app to manually experiment with models}
+            % \resumeItem{Implemented three search agents—Monte Carlo, Greedy, Minimax—for NYT Wordle puzzle, achieving 95.9\% win rate \\ and averaging under 4.25 guesses across 13,000 word dictionary. Built web app to manually experiment with models}
 
-            \resumeItem{Automated MCTS/Minimax hyperparameter optimization using Optuna with TPE Sampler, bumping win rates 4\%}
+            % \resumeItem{Implemented Monte Carlo, Greedy, and Minimax solving agents, achieving 95.9\% win rate and 4.25 average guess rate across 13,000 word dictionary. Developed full-stack web app to observe and debug model behavior via live game play}
 
-            \resumeItem{Deployed global cache for solver results, avoiding redundancy to cut MCTS runtime 35\% and keep UI latency $<$200ms}
+            \resumeItem{Developed Monte Carlo, Greedy, Minimax solvers, achieving 95.9\% win rate and 4.25 avg. guess rate across 13k words}
+
+            \resumeItem{Deployed Supabase cache to avoid redundant computation, cutting MCTS runtime 35\% and minimizing UI latency}
+
+            \resumeItem{Leveraged Optuna with TPE Sampler to finetune MCTS model parameters, reducing average guesses by 0.30}
         \resumeItemListEnd
 
 
@@ -236,14 +228,14 @@
         %     \resumeItem{Built ViT pre-filter, discarding $\sim$40\% unusable frames to preserve GPU budget.}
         % \resumeItemListEnd
     
-        % \resumeProjectHeading
-        %     {\textbf{\href{https://sebytremblay.com/blog/pdf/1}{Kubernetes Scheduling Optimization \faExternalLink}} $|$ \emph{Distributed Systems, Scalability, Performance}}{November 2024}
-        % \resumeItemListStart
-        %     %\resumeItem{Revealed performance and scalability limitations in default Kubernetes scheduler caused by lack of context awareness}
-        %     \resumeItem{Explored scalability constraints in Kubernetes scheduler, revealing performance impacts of limited contextual awareness}
-        %     %\resumeItem{Benchmarked hardware-aware scheduling methods to optimize efficiency and resource utilization in GPU-intensive jobs}
-        %     \resumeItem{Synthesized 6 SOTA network/hardware-aware methods to optimize latency \& GPU efficiency in compute-intensive jobs}
-        % \resumeItemListEnd
+        \resumeProjectHeading
+         {\textbf{\href{https://sebytremblay.com/blog/pdf/1}{Kubernetes Scheduling Optimization \faExternalLink}} $|$ \emph{Distributed Systems, Scalability, Performance}}{November 2024}
+        \resumeItemListStart
+            %\resumeItem{Revealed performance and scalability limitations in default Kubernetes scheduler caused by lack of context awareness}
+            \resumeItem{Explored scalability constraints in Kubernetes scheduler, revealing performance impacts of limited contextual awareness}
+            %\resumeItem{Benchmarked hardware-aware scheduling methods to optimize efficiency and resource utilization in GPU-intensive jobs}
+            \resumeItem{Synthesized 6 SOTA network/hardware-aware methods to optimize latency \& GPU efficiency in compute-intensive jobs}
+        \resumeItemListEnd
         
         % \resumeProjectHeading
         %     {\textbf{\href{https://github.com/sebytremblay/FinancialForecaster}{High-Performance Data Pipeline \faExternalLink}} $|$ \emph{Python, PyTorch, Kafka, PySpark, MariaDB}}{June 2024}
@@ -254,7 +246,7 @@
         % \resumeItemListEnd
         
         \resumeProjectHeading
-             {\textbf{\href{https://github.com/sebytremblay/raft-protocol}{Raft Consensus Protocol \faExternalLink}} $|$ \emph{Python, Networking, Reliability}}{April 2024}
+            {\textbf{\href{https://github.com/sebytremblay/raft-protocol}{Raft Consensus Protocol \faExternalLink}} $|$ \emph{Python, Networking, Reliability}}{April 2024}
         \resumeItemListStart
             \resumeItem{Designed and implemented Raft consensus protocol to promote fault-tolerance and consistency in distributed data store}
             \resumeItem{Achieved 99.92\% request success in simulations of 30\% packet loss, concurrent partitions, and consecutive leader failure}
@@ -280,8 +272,9 @@
     \resumeSubheading
       {Northeastern University}{Boston, MA}
       {Bachelor of Science in Computer Science, Artificial Intelligence. Mathematics Minor}{\textbf{GPA: 3.99/4.00}}
-    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Awards:X}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
+    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Activities:X}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
         \item[\textsc{Awards:}] \small Top 100 Influential Seniors Honoree, Dean's Scholarship (\$16,000/yr)
+        \item[\textsc{Activities:}] Type 1 Diabetes Fundraising (Raised \$65,000), Undergraduate Career Mentor (60+ clients)
         % ALL:
         %\item[\textbf{Coursework:}] \small Networking \& Distributed Systems, Algorithms \& Data Structures, Object Oriented Design, Machine Learning I/II, Multivariable Calculus, Stochastic Modeling I/II, Linear Algebra
 
@@ -300,21 +293,35 @@
     \vspace{-4pt}
   \resumeSubHeadingListEnd
 
-
-%-----------EXTRACURRICULARS-----------
-\section{Passions}
-\begin{description}[
-  leftmargin=!,
-  labelwidth=\widthof{\small\scshape Activities:},
-  itemsep=0.5pt,
-  parsep=0.5pt,
-  font=\normalfont\small\scshape
-]
-  \small
-  \item[\textsc{Activities:}] Type 1 Diabetes Fundraising (Raised \$65,000 for Breakthrough T1D), Undergraduate Career Mentor
-  \item[\textsc{Interests:}] Automation, Electric Longboarding, Teaching, International Traveling
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{description}[leftmargin=!,labelwidth=\widthof{\textsc{Frameworks/Libraries}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
+    % \item[\textsc{Languages:}] \small Java (\textsc{4 yrs}) $\cdot$ Python (\textsc{3 yrs}) $\cdot$ Typescript (\textsc{3 yrs}) $\cdot$ C\# (\textsc{2 yrs}) $\cdot$ C (\textsc{1 yr})
+    % \item[\textsc{Software:}] \small AWS (\textit{Cloud Practitioner}) $\cdot$ Kubernetes $\cdot$ PostgreSQL $\cdot$ Redis $\cdot$ Docker $\cdot$ Terraform
+    % \item[\textsc{Languages:}] \small {\textbf{(Advanced)}} Java $\cdot$ Python $\cdot$ TypeScript
+    % {\textbf{ (Intermediate)}} C\# $\cdot$ Go  $\cdot$ C
+    \item[\textsc{Languages:}] \small Java $\cdot$ Python $\cdot$ TypeScript $\cdot$ Go
+    \item[\textsc{Frameworks/Libraries:}]  Spring WebFlux $\cdot$ PyTorch $\cdot$ Scikit-Learn $\cdot$ React
+    \item[\textsc{Cloud/DevOps:}] \small AWS (\textit{Cloud Practitioner}) $\cdot$ Kubernetes $\cdot$ Docker $\cdot$ Terraform $\cdot$ Kafka
+    \item[\textsc{Databases:}] \small Redis $\cdot$ PostgreSQL $\cdot$ MongoDB
+    
 \end{description}
 \vspace{-4pt}
+
+%-----------EXTRACURRICULARS-----------
+% \section{Passions}
+% \begin{description}[
+%   leftmargin=!,
+%   labelwidth=\widthof{\small\scshape Activities:},
+%   itemsep=0.5pt,
+%   parsep=0.5pt,
+%   font=\normalfont\small\scshape
+% ]
+%   \small
+%   \item[\textsc{Activities:}] Type 1 Diabetes Fundraising (Raised \$65,000 for Breakthrough T1D), Undergraduate Career Mentor
+%   \item[\textsc{Interests:}] Automation, Electric Longboarding, Teaching, International Traveling
+% \end{description}
+% \vspace{-4pt}
 
 %-------------------------------------------
 \end{document}
