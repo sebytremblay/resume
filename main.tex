@@ -136,7 +136,6 @@
     \href{https://www.linkedin.com/in/sebastiantremblay/}{\uline{LinkedIn}}
 \end{center}
 
-
 %-----------EXPERIENCE-----------
 \section{Work Experience}
   \resumeSubHeadingListStart
@@ -150,25 +149,23 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
     \experienceHeading
-      {Founding Engineer}{September 2024 -- Present}
+      {Founder}{September 2024 -- Present}
       {GitMarks}{Boston, MA}
       \resumeItemListStart 
         % \resumeItem{Architected Git-native learning management software to expose students to industry development workflows. Spearheaded adoption by Northeastern University, orchestrating Fall 2025 roll out for 3,000 students}
-        \resumeItem{Architected 0-1 Git-native learning management software to expose students to industry development workflows}
+        \resumeItem{Pioneered development of Git-native grading software (\textit{Go Fiber, React}) to expose students to industry development workflows. Directed team of five, spearheading architecture planning, strategic product direction, and client acquisition}
 
         \resumeItem{Designed end-to-end AWS infrastructure, ensuring \textbf{99.99\% uptime for 300 weekly users} via auto-scaling policies, active-active failover, and load balancing. Provisioned with Terraform, serving Dockerized microservices on ECS}
 
-        \resumeItem{Engineered distributed, event-driven pipeline for processing GitHub webhooks (\textit{Go, AWS SQS}), preserving in-order execution of \textbf{20,000 weekly events}. Automated retries and dead-letter queues, eliminating 95\% of manual recovery}
-        
-        \resumeItem{Managed team of 5 engineers, owning architecture planning, strategic product direction, and one-on-one mentorship}
-
+        % \resumeItem{Engineered distributed, event-driven pipeline for processing GitHub webhooks (\textit{Go, AWS SQS}), preserving in-order execution of \textbf{20,000 weekly events}. Automated retries and dead-letter queues, eliminating 95\% of manual recovery}
+        \resumeItem{Engineered distributed, event-driven pipeline for 20K weekly GitHub webhook events (\textit{Go, AWS SQS}), enforcing in‑order processing with DLQs and retries to eliminate 95\% of manual recoveries}
         % \resumeItem{Amplified scalability by integrating Redis for caching/session management, slashing GitHub \textbf{API queries 22\%}}
     \resumeItemListEnd
     \experienceHeading
       {Software Engineer Intern}{May 2024 -- August 2024}
       {Salesforce}{San Francisco, CA}
       \resumeItemListStart
-        \resumeItem{Architected observability and monitoring console for document processing service with $\sim$12,000 WAU, providing tools to triage and resolve failures. \textbf{Reduced MTTR 30\%} by replacing ad-hoc solution with centralized UI (\textit{Angular})}
+        \resumeItem{Architected observability and monitoring console for document processing service with $\sim$12,000 WAU, providing tools to triage and resolve failures. \textbf{Reduced MTTR 30\%} by replacing ad-hoc solution with centralized application}
 
         \resumeItem{Constructed reactive API routes (\textit{Spring WebFlux}) to aggregate metadata across 3 microservices. Enabled real-time debugging workflows for \textbf{1M+ document processing executions} via non-blocking I/O queries (\textit{Redis, R2DBC})}
 
@@ -199,7 +196,7 @@
       {Ultimate Kronos Group (UKG)}{Virtual}
       \resumeItemListStart
         \resumeItem{Earned Employee of Month award for diagnosing and resolving critical system outage \textbf{affecting 6,000+ customers}}
-        \resumeItem{Developed application in internal hackathon to automate local environment setup for new hires (\textit{Python/Bash Scripts}), reducing average onboarding time by 2 days. Won ``Fan Favorite" award, deploying solution to 300+ engineers}
+        \resumeItem{Developed application to automate local environment setup for new hires (\textit{Python/Bash Scripts}), reducing average onboarding time by 2 days. Won ``Fan Favorite" award in internal hackathon, deploying solution to 300+ engineers}
     \resumeItemListEnd
     \vspace{-4pt}
   \resumeSubHeadingListEnd
@@ -229,7 +226,7 @@
             \resumeItem{Implemented custom Vision Transformer as pre-filter for facial recognition pipeline, discarding 90\% of unusable frames}
             % \resumeItem{Leveraged multi-head self-attention, positional encodings, and stochastic depth to boost performance $\sim$6\%}
             \resumeItem{Engineered attention map visualization, dissecting information flow across 12 layers to enhance model interpretability}
-            \resumeItem{Experimented with stochastic depth and weight initialization strategies, boosting performance $\sim$6\%}
+            % \resumeItem{Experimented with stochastic depth and weight initialization strategies, boosting performance $\sim$6\%}
             % \resumeItem{Designed image processing pipeline with stratified data split, batch normalization, and learning rate scheduling}
         \resumeItemListEnd
     
@@ -277,9 +274,11 @@
     \resumeSubheading
       {Northeastern University}{Boston, MA}
       {Bachelor of Science in Computer Science, Artificial Intelligence. Mathematics Minor}{\textbf{GPA: 3.99/4.00}}
-    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Activities:X}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
-        \item[\textsc{Awards:}] \small Top 100 Influential Seniors Honoree, Dean's Scholarship (\$16,000/yr)
-        \item[\textsc{Activities:}] Type 1 Diabetes Fundraising (Raised \$65,000), Career Mentor (60+ clients), Generate Product Development
+    \begin{description}[leftmargin=!,labelwidth=\widthof{\small\textit{Coursework:XX}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
+        \item[\textsc{Awards:}] \small Top 100 Influential Students Honoree, Dean's Scholarship (\$16,000/yr)
+        \item[\textsc{Activities:}] \small Generate Product Development, Type 1 Diabetes Fundraising (\$65,000), Career Mentor (60+ clients)
+        \item[\textsc{Coursework:}] \small Deep Learning I/II, Stochastic Modeling I/II, Networking \& Distributed Systems, Algorithms, NLP
+        
         % ALL:
         %\item[\textbf{Coursework:}] \small Networking \& Distributed Systems, Algorithms \& Data Structures, Object Oriented Design, Machine Learning I/II, Multivariable Calculus, Stochastic Modeling I/II, Linear Algebra
 
@@ -298,6 +297,7 @@
     \vspace{-4pt}
   \resumeSubHeadingListEnd
 
+
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{description}[leftmargin=!,labelwidth=\widthof{\textsc{Programming Languages}}, itemsep=0.5pt, parsep=0.5pt, font=\normalfont\small]
@@ -306,14 +306,14 @@
     % \item[\textsc{Languages:}] \small {\textbf{(Advanced)}} Java $\cdot$ Python $\cdot$ TypeScript
     % {\textbf{ (Intermediate)}} C\# $\cdot$ Go  $\cdot$ C
     \item[\textsc{Programming Languages:}] \small Java $\cdot$ Python $\cdot$ TypeScript $\cdot$ Go $\cdot$ C $\cdot$ C\#
-    \item[\textsc{Frameworks/Libraries:}]  Spring WebFlux $\cdot$ PyTorch $\cdot$ Scikit-Learn $\cdot$ Numpy $\cdot$ React
+    \item[\textsc{Frameworks/Libraries:}]  Spring WebFlux $\cdot$ R2DBC $\cdot$ PyTorch $\cdot$ Scikit-Learn $\cdot$ Numpy $\cdot$ React
     \item[\textsc{Cloud/DevOps:}] \small AWS (\textit{Cloud Practitioner}) $\cdot$ Kubernetes $\cdot$ Docker $\cdot$ Terraform $\cdot$ Kafka
-    \item[\textsc{Databases:}] \small Redis $\cdot$ PostgreSQL $\cdot$ MongoDB
+    \item[\textsc{Databases:}] \small Redis $\cdot$ PostgreSQL $\cdot$ MySQL $\cdot$ MongoDB
     
 \end{description}
 \vspace{-4pt}
 
-%-----------EXTRACURRICULARS-----------
+% -----------EXTRACURRICULARS-----------
 % \section{Passions}
 % \begin{description}[
 %   leftmargin=!,
@@ -323,7 +323,6 @@
 %   font=\normalfont\small\scshape
 % ]
 %   \small
-%   \item[\textsc{Activities:}] Type 1 Diabetes Fundraising (Raised \$65,000 for Breakthrough T1D), Undergraduate Career Mentor
 %   \item[\textsc{Interests:}] Automation, Electric Longboarding, Teaching, International Traveling
 % \end{description}
 % \vspace{-4pt}
